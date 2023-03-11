@@ -1,0 +1,133 @@
+.whtgh__container {
+    background: var(--color-footer);
+    /*  */
+    padding: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 11rem;
+    
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.gpt3__pos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+.gpt3__pos__heading{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.empty__div{
+    display: flex;
+}
+.empty__div p {
+    /* margin-top: 2rem; */
+}
+.gpt3__pos p {
+    color: #FF8A71;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+}
+.empty-tittle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+}
+.gpt3__feature {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.gpt3__feature__body{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .whtgh__container {
+        width: 700px;
+        height: 750px;
+        padding: 1.6rem;
+        flex-direction: column;
+        
+        margin: 2rem 5rem; 
+    }
+    .gpt3__feature__body {
+        margin-top: 0.5rem;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .whtgh__container {
+        width: 520px;
+        height: 750px;
+        padding: 1.6rem;
+        flex-direction: column;
+        margin: 2rem 5rem; 
+    }
+    .gpt3__pos {
+        
+        margin-top: -2rem;
+        /* margin-left: 0.6rem; */
+
+    }
+    .gpt3__pos__heading{
+        font-style: normal;
+        font-weight: 6 00;
+        font-size: 28px;
+        line-height: 30px;
+        
+    }
+}
+@media screen and (max-width: 500px) {
+    .whtgh__container {
+        width: 350px;
+        height: 830px;
+        /* padding: 1rem; */
+        flex-direction: column;
+        margin: 1rem 1.5rem; 
+    }
+    .gpt3__pos {
+        display: flex;
+        margin-top: 1rem;
+        /* margin-left: 0.6rem; */
+
+    }
+    .empty-tittle{
+        /* flex-direction: column; */
+        margin-top: 0rem;
+    }
+    .gpt3__pos__heading{
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 15px;
+        
+    }
+}

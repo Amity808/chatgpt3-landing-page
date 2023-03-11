@@ -1,0 +1,81 @@
+.WordFeat__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+}
+.WordFeat__container_bg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.WordFeat__container_bg h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+.WordFeat__container_bg p {
+    color: #FF8A71;
+}
+.WordFeat_side__container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -2.4rem;
+    
+}
+.gpt3__feature {
+    display: flex;
+    flex-direction: row;
+     justify-content: flex-end; 
+ }
+.gpt3__feature__body {
+    margin-top: -0.8rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #81AFDD; 
+} 
+@media screen and (max-width: 1000px) {
+    
+    
+}
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 500px) {
+    .WordFeat__container {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    .WordFeat__container_bg h1 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 2rem;
+
+    }
+    .WordFeat__container_bg p {
+        font-size: 12px;
+    }
+}

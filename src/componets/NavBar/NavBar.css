@@ -1,0 +1,165 @@
+.gpt3_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.nav_barLinks{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.nav_barlogo {
+    margin-right: 2rem;
+}
+.gpt3_logo {
+    margin-right: 2rem;
+}
+
+.nav_barLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+}
+.nav_links p, .sign_part a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav_barLinks a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav_barLinks a:hover{
+    opacity: 0.5;
+}
+
+
+.nav_barlogo img{
+    width: 62.56px;
+    height: 16.02px;
+}
+.sign_part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-left: 21rem; */
+}
+.sign_part button, .gpt3_mobile__navbar_sign button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+ .navbar__menu__mobile {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+ }
+.navbar__menu__mobile svg {
+    cursor: pointer;
+
+}
+.gpt3__mobile_menu {
+    display:  flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+}
+
+.gpt3__mobile_menu p {
+    margin: 1rem 0;
+}
+
+.gpt3__mobile__menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.gpt3__mobile__menu__links p {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.opensans {
+    text-decoration: none;
+    color: #ffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav_links {
+        display: none;
+    }
+    .navbar__menu__mobile {
+        display: flex;
+    }
+    .gpt3__mobile__menu__links {
+        display: flex;
+    }
+}
+@media screen and (max-width: 700px) {
+    .gpt3_navbar {
+        padding: 2rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .gpt3_navbar {
+        padding: 2rem 4rem;
+    }
+    .gpt3_mobile__navbar_sign p button {
+        display: none;
+    }
+    .gpt3__mobile_menu {
+        top: 35px;
+    }
+    .gpt3__mobile__menu__links {
+        display: block;
+    }
+    /* .opensans {
+        display: none;
+    } */
+    .sign_part {
+        display: none;
+    }
+}
